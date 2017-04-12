@@ -1,0 +1,68 @@
+<div class="container" ng-controller="IndexController">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9">
+            <p style="padding:20px;"></p>
+            <h3 align=center>Our Lipsmacking Culinary Creations</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            <div class="media">
+                <p style="padding:5px;"></p>
+                <div style="padding: 0 15px 0 0;" class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object img-thumbnail" src="{{ featdish.image }}" alt="{{ featdish.name }}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p style="padding:5px;"></p>
+                    <h2 class="media-heading">{{ featdish.name }}</h2>
+                    <p>{{ featdish.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3">
+            <p style="padding:10px;"></p>
+            <h3 align=center>This Month's Promotions</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <div class="media">
+                <p style="padding:5px;"></p>
+                <div style="padding: 0 15px 0 0;" class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object img-thumbnail" src="{{ promotion.image }}" alt="{{ promotion.name }}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p style="padding:5px;"></p>
+                    <h2 class="media-heading">{{ promotion.name }}</h2>
+                    <p>{{promotion.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9">
+            <p style="padding:20px;"></p>
+            <h3 align=center>Meet our Culinary Specialists</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            <div class="media">
+                <p style="padding:5px;"></p>
+                <div style="padding: 0 15px 0 0;" class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object img-thumbnail" src="{{ execchef.image }}" alt="{{ execchef.name }}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p style="padding:5px;"></p>
+                    <h2 class="media-heading">{{ execchef.name }}</h2>
+                    <p>{{execchef.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
